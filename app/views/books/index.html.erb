@@ -16,9 +16,9 @@
               <tr>
                  <tb><%= book.title %></tb>
                  <tb><%= book.body %></tb>
-                 <tb><%= link_to "Show","#" %></tb>
-                 <tb><%= link_to "Edit","#" %></tb>
-                 <tb><%= link_to "Destroy", "#"%></tb>
+                 <tb><%= link_to "Show",book_path(book.id) %></tb>
+                 <tb><%= link_to "Edit",edit_book_path(book.id) %></tb>
+                 <tb><%= link_to "Destroy", books_path(book.id),method: :delete,"data-confirm" => "本当に削除しますか？"%></tb>
               </tr>
            </tbody>
         <% end %>
