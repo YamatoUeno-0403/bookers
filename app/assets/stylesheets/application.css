@@ -31,6 +31,10 @@ h2{
     margin: 10px 0;
 }
 
+
+
+
+
 /* show */
 .show{
     padding-left: 30px;
@@ -41,4 +45,16 @@ h2{
 }
 .strong{
     margin-right: 5px
+}
+
+
+
+
+
+/* edit */
+.edit{
+    margin-top: 15px;
+}
+.updatebox{
+    margin: 10px 0;
 }
