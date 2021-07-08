@@ -1,41 +1,54 @@
+<body>
+   <% if flash[:success] %>
+     <p id="success">
+       <%= flash[:success] %>
+     </p>
+   <% end %>
+ 
+ <div class="index-container">
  <h1>Books</h1>
  
- 
-    <table>
-        <thead>
-            <tr>
-               <th>Title</th>
-               <th>body</th>
-               <th colspan="3"></th>
-            </tr>
-        </thead>
-        
-        <% @books.each do |book| %>
-           <tbody>
-        
+   <div class="wrap">
+      <table>
               <tr>
-                 <tb><%= book.title %></tb>
-                 <tb><%= book.body %></tb>
-                 <tb><%= link_to "Show",book_path(book.id) %></tb>
-                 <tb><%= link_to "Edit",edit_book_path(book.id) %></tb>
-                 <tb><%= link_to "Destroy", books_path(book.id),method: :delete,"data-confirm" => "本当に削除しますか？"%></tb>
+               　　<th>Title</th>
+               　　<th>body</th>
+               　　<th colspan="3"></th>
               </tr>
-           </tbody>
-        <% end %>
- 
- 
+      </table>
+      <table>
+              <tr>
+                  <% @books.each do |book| %>
+                     <div class="box">
+                　　      <tb><%= book.title %></tb>
+                        <tb><%= book.body %></tb>
+                        <tb><%= link_to "Show",book_path(book.id) %></tb>
+                        <tb><%= link_to "Edit",edit_book_path(book.id) %></tb>
+                        <tb><%= link_to "Destroy", books_path(book.id),method: :delete,"data-confirm" => "本当に削除しますか？"%></tb>
+                     </div>
+              　  <% end %>
+             　</tr>
+    　</table>
+   </div>
  
  
 <h2>New book</h2>
 
 <%= form_with model:@book, local:true do |f| %>
 
+
   <h4>Title</h4>
   <%= f.text_field :title %>
 
+
   <h4>body</h4>
   <%= f.text_area :body %>
-
+  
+  <h4>
   <%= f.submit 'Create Book' %>
-
+  </h4>
 <% end %>
+
+</div>
+
+</body>

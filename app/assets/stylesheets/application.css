@@ -1,0 +1,44 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+/* index */
+
+body{
+    background-color: #fff;
+    color: #333;
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    margin: 33px;
+}
+
+.index-container{
+    margin-top: 80px;
+    margin-left: 20px;
+}
+
+.wrap{
+    margin-left: 10px;
+}
+
+table{
+    width: 40%;
+    text-align: left;
+}
+h2{
+    margin: 10px 0;
+}
+
+/* show */
+.show{
+    padding-left: 30px;
+}
+
+.showcommon{
+    padding-bottom: 25px;
+}
+.strong{
+    margin-right: 5px
+}
