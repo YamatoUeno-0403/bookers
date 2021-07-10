@@ -32,27 +32,26 @@
                 <% end %>
            </table>
         </div>
-   
+        
      <h2 class="newbook">New book</h2>
-
-
-       <%= form_with model:@book, local:true do |f| %>
-          <%= render 'shared/error_messages' %>
-
-          <p>Title</p>
-             <div class="new">
+     <div class="form_with">
+         <%= form_with model:@book, local:true do |f| %>
+         <%= render 'shared/error_messages', massage: f.object %>
+            <div class="field">
+                <p>Title</p>
                 <%= f.text_field :title %>
-              </div>
+            </div>   
 
-          <p>body</p>
-             <div class="new">
+          
+            <div class="field">
+                <p>Body</p>
                 <%= f.text_area :body %>
-             </div>
-  
-             <div class="createbox">
-                <%= f.submit 'Create Book' %>
-             </div>
-       <% end %>
+            </div>
+                <%= f.submit 'Create Book',class: "createbox" %>
+         
+         <% end %>
+    </div>
+
   </div>
 
 </body>
