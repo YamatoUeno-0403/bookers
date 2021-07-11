@@ -1,6 +1,7 @@
 
 <h1>Editing Book</h1>
-<%= form_with model:@book, local: true do |f| %>
+<%= form_with model:@book, local:true do |f| %>
+<%= render 'shared/error_messages', massage: f.object %>
   <p class="edit">Title</p>
   <%= f.text_field :title %>
   <p class="edit">Body</p>
