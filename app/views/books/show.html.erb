@@ -1,2 +1,22 @@
-<h1>Books#show</h1>
-<p>Find me in app/views/books/show.html.erb</p>
+
+<div class="success">
+<% if flash[:success] %>
+     <p id="success">
+       <%= flash[:success] %>
+     </p>
+<% end %>
+</div>
+ <div class="show">
+     <p class="showcommon">
+         <strong class="strong">Title:</strong><%= @books.title %>
+     </p>
+
+     <p class="showcommon">
+         <strong class="strong">Body:</strong><%= @books.body %>
+     </p>
+ </div>
+
+
+  <%= link_to "Edit", edit_book_path %>
+    |
+  <%= link_to "Back", books_path %>

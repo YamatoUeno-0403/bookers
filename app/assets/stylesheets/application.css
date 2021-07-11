@@ -1,0 +1,104 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.toppage{
+    padding-left:20px;
+}
+.bookers{
+    margin-top: 30px;
+}
+.start{
+    padding: 20px 0 0 20px;
+}
+body{
+    background-color: #fff;
+    color: #333;
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    margin: 33px;
+    height: 100%;
+}
+
+
+
+/* index */
+.index-container{
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+table{
+    width: 100%;
+}
+td{
+    padding: 5px;
+}
+.newbook{
+    margin:20px 0;
+}
+.wrap{
+    margin-left: 10px;
+}
+
+.field{
+    margin-bottom: 10px;
+}
+
+/* show */
+.show{
+    padding-left: 30px;
+}
+
+.showcommon{
+    padding-bottom: 25px;
+}
+.strong{
+    margin-right: 5px
+}
+
+.success{
+   margin: 0 0 30px 30px;
+    color: green;
+}
+
+
+
+/* edit */
+.edit{
+    margin-top: 15px;
+}
+.updatebox{
+    margin: 10px 0;
+}
+
+
+
+
+
+/* error_massages*/
+.error{
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    padding: 5px 5px 5px 10px;
+}
+
+.alert{
+    border:solid 1px red;
+    width: 40%;
+    background-color: lightgray;
+    height: 130px;
+    
+    margin: 20px 0 10px;
+}
+
+ul{
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 2em;
+    padding-inline-start: 50px;
+
+}
