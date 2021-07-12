@@ -1,6 +1,6 @@
 class BooksController < ApplicationController
   def index
-    @books = Book.all.order(id: :desc)
+    @books = Book.all.order(id: :asc)
     @book = Book.new
   end
 
